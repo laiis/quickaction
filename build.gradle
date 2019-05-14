@@ -33,7 +33,7 @@ ext {
   ANDROID_TARGET_SDK = 27
   ANDROID_SUPPORT_VERSION = "27.1.1"
 
-  githubRepo = 'piruin/quickaction'
+  githubRepo = 'laiis/quickaction'
 }
 
 task wrapper(type: Wrapper) {
