@@ -61,6 +61,7 @@
     android:id="@+id/arrow_up"
     android:layout_width="@dimen/quick_action_arrow_width"
     android:layout_height="@dimen/quick_action_arrow_height"
+    android:elevation="4dp"
     />
 
   <View
@@ -68,7 +69,7 @@
     android:layout_width="@dimen/quick_action_arrow_width"
     android:layout_height="@dimen/quick_action_arrow_height"
     android:layout_below="@id/id_card"
-    android:layout_marginTop="-8dp"
+    android:elevation="4dp"
     />
 
 </RelativeLayout>
