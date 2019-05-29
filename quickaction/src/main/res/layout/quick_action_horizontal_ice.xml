@@ -15,59 +15,41 @@
   -->
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="wrap_content"
   android:layout_height="wrap_content"
-  android:background="@android:color/transparent"
-  tools:ignore="NegativeMargin"
-  tools:targetApi="LOLLIPOP">
+  tools:ignore="NegativeMargin">
 
-  <android.support.v7.widget.CardView
-    android:id="@+id/id_card"
+  <HorizontalScrollView
+    android:id="@+id/scroller"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="6dp"
     android:layout_marginTop="19dp"
-    android:layout_marginRight="6dp"
-    android:layout_marginBottom="6dp"
-    android:translationZ="4dp"
-    app:cardCornerRadius="4dp"
-    app:cardElevation="4dp">
+    android:fadingEdgeLength="5dp"
+    android:overScrollMode="never"
+    android:scrollbars="none">
 
-    <HorizontalScrollView
-      android:id="@+id/scroller"
+    <LinearLayout
+      android:id="@+id/tracks"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:fadingEdgeLength="5dp"
-      android:overScrollMode="never"
-      android:scrollbars="none">
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:padding="8dp" />
 
-      <LinearLayout
-        android:id="@+id/tracks"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="8dp" />
-
-    </HorizontalScrollView>
-
-  </android.support.v7.widget.CardView>
+  </HorizontalScrollView>
 
   <View
     android:id="@+id/arrow_up"
     android:layout_width="@dimen/quick_action_arrow_width"
     android:layout_height="@dimen/quick_action_arrow_height"
-    android:elevation="4dp"
-    android:translationZ="4dp" />
+    android:layout_marginTop="1dp" />
 
   <View
     android:id="@+id/arrow_down"
     android:layout_width="@dimen/quick_action_arrow_width"
     android:layout_height="@dimen/quick_action_arrow_height"
-    android:layout_below="@id/id_card"
-    android:elevation="4dp"
-    android:translationZ="4dp" />
+    android:layout_below="@id/scroller"
+    android:layout_marginTop="-2dp" />
 
 </RelativeLayout>
