@@ -66,9 +66,10 @@ public class SampleActivity extends AppCompatActivity {
 
     //create QuickAction. Use QuickAction.VERTICAL or QuickAction.HORIZONTAL param to define layout
     //orientation
-    quickAction = new QuickAction(this, QuickAction.VERTICAL);
-    quickAction.setColorRes(R.color.white);
-    quickAction.setTextColorRes(R.color.pink);
+    quickAction = new QuickAction(this, QuickAction.HORIZONTAL);
+    quickAction.setColorRes(R.color.teal);
+//    quickAction.setTextColorRes(R.color.jjj);
+    quickAction.setTextColor(Color.parseColor("#ffff00"));
 
     //set divider with color
     //quickAction.setDividerColor(ContextCompat.getColor(this, R.color.white));
